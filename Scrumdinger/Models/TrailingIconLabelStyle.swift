@@ -5,7 +5,7 @@
 //  Created by Dexter Barney on 9/12/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct TrailingIconLabelStyle: LabelStyle {
     func makeBody(configuration: Configuration) -> some View {
@@ -16,6 +16,6 @@ struct TrailingIconLabelStyle: LabelStyle {
     }
 }
 
-extension LabelStyle where Self == TrailingIconLabelStyel {
+extension LabelStyle where Self == TrailingIconLabelStyle {
     static var trailingIcon: Self { Self() }
 }
