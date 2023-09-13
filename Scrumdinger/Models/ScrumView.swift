@@ -24,4 +24,4 @@ struct ScrumView_Previews: PreviewProvider {
 }
 
 
-// github test commit
+// test commit using CLI
