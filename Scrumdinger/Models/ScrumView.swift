@@ -22,3 +22,6 @@ struct ScrumView_Previews: PreviewProvider {
         ScrumView(scrums: DailyScrum.sampleData)
     }
 }
+
+
+// This is a comment
