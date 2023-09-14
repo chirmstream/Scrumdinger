@@ -24,4 +24,6 @@ struct ScrumView_Previews: PreviewProvider {
 }
 
 
-// test commit using CLI
+// test commit
+// using github desktop
+// was this commit verified?
