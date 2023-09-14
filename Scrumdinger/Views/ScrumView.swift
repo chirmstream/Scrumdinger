@@ -13,6 +13,7 @@ struct ScrumView: View {
     var body: some View {
         List(scrums, id: \.title) {scrum in
             CardView(scrum: scrum)
+                .listRowBackground(scrum.theme.mainColor)
         }
     }
 }
@@ -22,8 +23,3 @@ struct ScrumView_Previews: PreviewProvider {
         ScrumView(scrums: DailyScrum.sampleData)
     }
 }
-
-
-// test commit
-// using github desktop
-// was this commit verified?
