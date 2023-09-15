@@ -16,14 +16,15 @@ struct ScrumsView: View {
                 NavigationLink(destination: Text(scrum.title)) {
                     CardView(scrum: scrum)
                 }
-                .listRowBackground(scrum.theme.mainColor)            }
-        }
-        .navigationTitle("Daily Scrums")
-        .toolbar {
-            Button(action: {}) {
-                Image(systemName: "plus")
+                .listRowBackground(scrum.theme.mainColor)
             }
-            .accessibilityLabel("New Scrum")
+            .navigationTitle("Daily Scrums")
+            .toolbar {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+                .accessibilityLabel("New Scrum")
+            }
         }
     }
 }
