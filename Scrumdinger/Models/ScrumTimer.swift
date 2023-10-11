@@ -155,3 +155,4 @@ extension Array<DailyScrum.Attendee> {
             return map { ScrumTimer.Speaker(name: $0.name, isCompleted: false) }
         }
     }
+}
