@@ -22,6 +22,7 @@ struct MeetingFooterView: View {
         guard let speakerNumber = speakerNumber else { return "No more speakers" }
         return "Speaker \(speakerNumber) of \(speakers.count)"
     }
+    
     var body: some View {
         VStack {
             HStack {
@@ -40,7 +41,6 @@ struct MeetingFooterView: View {
         .padding([.bottom, .horizontal])
     }
 }
-
 
 struct MeetingFooterView_Previews: PreviewProvider {
     static var previews: some View {
