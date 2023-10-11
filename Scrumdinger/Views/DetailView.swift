@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DetailView: View {
     @Binding var scrum: DailyScrum
-    
     @State private var editingScrum = DailyScrum.emptyScrum
+
     @State private var isPresentingEditView = false
     
     var body: some View {
@@ -38,7 +38,7 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
             }
-            Section(header: Text("Attendee")) {
+            Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
